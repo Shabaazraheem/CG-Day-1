@@ -1,0 +1,59 @@
+BEGIN 
+ 	DECLARE num as INTEGER
+	INITALIZE num to 0
+	PROMPT " Enter the number" AND Store in num
+	if ( num % 2 ==0|| num % 3==0|| num % 5==0)
+	Display " Divisible by either 2, 3, 5"
+	else
+	Display " Not Divisible by 2,3,5"
+	End If 
+END
+
+BEGIN 
+	DECLARE age as INTEGER
+	INITALIZE age to 0
+	PROMPT " Enter the age" and store in age 
+if( age <18)
+	 DISPLAY " NOT ELIGIBLE" 
+	if( age >60)
+	 DISPLAY " Senior Citizen" 
+	if( age >=18&& age <=60)
+ 	DISPLAY " Eligible " 
+	END IF
+END
+
+
+BEGIN 
+	DECLARE num as INTEGER
+	INITIALIZE num to 1
+	WHILE ( num <=5) DO
+	Display " num"
+	num=num+1
+	END WHILE
+END
+
+BEGIN
+	DECLARE  num as INTEGER
+	FOR  1 TO 10
+	if ( num% 2==0)
+	DISPLAY " EVEN"
+	ELSE 
+	DISPLAY " ODD"
+	END IF
+	END FOR
+END
+
+BEGIN
+	DECLARE num[10] as INTEGER ARRAY
+	DECLARE  E as INTEGER
+	FOR INDEX = 1 to 10
+		ACCEPT num[index]
+	END FOR 
+	FOR INDEX= 1 TO 10
+		IF( E%2==0)
+		    DISPLAY "EVEN"
+		ELSE
+		    DISPLAY " ODD"
+	END FOR 
+END	
+	
